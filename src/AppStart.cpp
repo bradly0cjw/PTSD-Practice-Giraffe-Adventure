@@ -49,6 +49,7 @@ void App::Start() {
     m_Ball = std::make_shared<AnimatedCharacter>(ballImages);
     m_Ball->SetVisible(false);
     m_Ball->SetZIndex(5);
+    m_Ball->SetPosition({-112.5f, -140.5f});
     m_Root.AddChild(m_Ball);
 
 

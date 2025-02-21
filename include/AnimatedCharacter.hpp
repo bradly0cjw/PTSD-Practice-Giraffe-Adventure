@@ -26,6 +26,10 @@ public:
         temp->SetLooping(looping);
     }
 
+    void SetPosition(const glm::vec2 &Position) {
+        m_Transform.translation = Position;
+    }
+
     [[nodiscard]] bool IfAnimationEnds() const;
 
 };
